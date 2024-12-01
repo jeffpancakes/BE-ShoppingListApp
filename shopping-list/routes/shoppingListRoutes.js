@@ -14,7 +14,7 @@ const router = express.Router();
 router.get("/lists", getActiveLists);
 router.get("/lists/archived", authenticateToken, getArchivedLists);
 router.get("/list/:listID", authenticateToken, getListById);
-router.post("/add", authenticateToken, addList);
+router.post("/create", authenticateToken, addList);
 router.put("/update/:listID", authenticateToken, updateList);
 router.delete("/delete/:listID", authenticateToken, deleteList);
 

@@ -129,7 +129,7 @@ const addList = (req, res) => {
   };
 
   shoppingLists.push(newList);
-  res.status(201).json({ message: "List added successfully", data: newList });
+  res.status(201).json({ message: "List created successfully", data: newList });
 };
 
 const updateList = (req, res) => {
