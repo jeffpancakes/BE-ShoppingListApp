@@ -55,7 +55,7 @@ const shoppingLists = [
     }
   ];
 
-const getAllLists = (req, res) => {
+const getActiveLists = (req, res) => {
   const archived = req.query.archived === "true";
   try {
     const data = shoppingLists
@@ -157,10 +157,10 @@ const deleteList = (req, res) => {
 };
 
 module.exports = { 
-    getAllLists, 
+    getActiveLists, 
     getArchivedLists,
     getListById, 
     addList, 
     updateList, 
-    deleteList 
+    deleteList
 };

@@ -1,16 +1,16 @@
 const express = require("express");
 const {
-  getAllLists,
+  getActiveLists,
+  getArchivedLists,
   getListById,
   addList,
   updateList,
-  deleteList,
-  getArchivedLists
+  deleteList
 } = require("../controllers/shoppingListController");
 
 const router = express.Router();
 
-router.get("/lists", getAllLists);
+router.get("/lists", getActiveLists);
 router.get("/lists/archived", getArchivedLists);
 router.get("/list/:listID", getListById);
 router.post("/add", addList);
