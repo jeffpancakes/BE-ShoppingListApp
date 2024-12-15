@@ -3,15 +3,15 @@ const { listIDSchema, addListSchema, updateListSchema } = require("../validation
 
 const shoppingLists = [
     {
-      id: generateRandomId(),
-      owner: generateRandomId(),
+      id: "0fe2d73c5eaf6c32eec48e12",
+      owner: "fa9dba36fbe0a0362f1ece5d",
       archived: false,
       name: "Nákupní seznam 1",
       items: [
-        { id: generateRandomId(), solved: false },
-        { id: generateRandomId(), solved: true },
+        { id: "0ca942ef3c5bc1766c7c6b39", solved: false },
+        { id: "fcc56cdb644983fd5679bf92", solved: true },
       ],
-      members: [{ id: generateRandomId() }, { id: generateRandomId() }],
+      members: [{ id: "870253e7d9aa9da13862cbb6" }, { id: "95ca71611913af43fe7ee66e" }],
     },
     {
       id: generateRandomId(),

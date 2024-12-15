@@ -12,10 +12,10 @@ const authenticateToken = require("../utils/authMiddleware");
 const router = express.Router();
 
 router.get("/lists", getActiveLists);
-router.get("/lists/archived", authenticateToken, getArchivedLists);
-router.get("/list/:listID", authenticateToken, getListById);
-router.post("/create", authenticateToken, addList);
-router.put("/update/:listID", authenticateToken, updateList);
-router.delete("/delete/:listID", authenticateToken, deleteList);
+router.get("/lists/archived", getArchivedLists);
+router.get("/list/:listID", getListById);
+router.post("/create", addList);
+router.put("/update/:listID", updateList);
+router.delete("/delete/:listID", deleteList);
 
 module.exports = router;
